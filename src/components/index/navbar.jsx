@@ -7,7 +7,7 @@ import LogoImg from '../../assets/logo-simple-calculator.svg';
 const Box = styled('div', {
     display : 'flex',
     width : '100%',
-    height: '10vmin',
+    height: '10vmin'
 });
 
 const Img = styled('img', {

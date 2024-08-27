@@ -11,7 +11,7 @@ function UiNavbar() {
             <Navbar>
                 <BoxLogoNavbar>
                     <Img src={LogoImg}></Img>
-                    <Link to='/' className="logo-link">Symple</Link>
+                    <Link to='/symple-calculator' className="logo-link">Symple</Link>
                 </BoxLogoNavbar>
                 <a className="link-author">By Essyefe</a>
             </Navbar>

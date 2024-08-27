@@ -2,8 +2,18 @@ import { keyframes, styled } from "@stitches/react";
 
 // Index Customs
 
+export const opacityAnimation = keyframes({
+    '0%': {
+        opacity: '0'
+    },
+    '100%': {
+        opacity: '1'
+    }
+});
+
 export const Box = styled('div', {
-    width: '100%'
+    width: '100%',
+    animation : `${opacityAnimation} 0.5s`
 });
 
 export const AnimationTitle = keyframes({
@@ -38,7 +48,8 @@ export const Subtitle = styled('h2', {
     background: 'linear-gradient(to right, #CFCFCF, #1E1E1E)',
     WebkitBackgroundClip: 'text',
     WebkitTextFillColor: 'transparent',
-    fontWeight: '100'
+    fontWeight: '100',
+    textAlign : 'center'
 });
 
 export const BoxButton = styled('div', {
@@ -236,7 +247,6 @@ export var BoxClear = styled('btn', {
     height: '15vmin',
     borderRadius: '1vmin',
     backgroundColor: '#8000FF',
-    //animation: `${opacityAnimation} 1s`,
     transition: '0.5s',
     '&:hover': {
         marginLeft: '3vmin',
@@ -253,14 +263,6 @@ export const ImgClear = styled('img', {
     height: '10vmin'
 });
 
-export const opacityAnimation = keyframes({
-    '0%': {
-        opacity: '0'
-    },
-    '100%': {
-        opacity: '1'
-    }
-});
 
 export const opacityReverseAnimation = keyframes({
     '0%': {
